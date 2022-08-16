@@ -5,7 +5,7 @@
 Application web permettant d'afficher les fruits et légumes de saison en reprenant les data ADEME et Agribalyse.
 Modifié pour être incoporé au site du SEVADEC, plus ajout de cartes locals de producteurs de fruits et légumes
 
-URL SOON
+https://fruits-et-legumes-de-saison-calaisis.netlify.app/
 
 ## Développement
 
