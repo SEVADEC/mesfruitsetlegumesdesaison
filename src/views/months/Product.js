@@ -91,7 +91,7 @@ const ScoreNumber = styled.span`
   color: ${(props) => (props.high ? "#c81d25" : "inherit")};
 `;
 export default function Product(props) {
-  const { setCO2E, setLocal } = useContext(ModalContext);
+  const { setCO2E } = useContext(ModalContext);
 
   const { accessibility } = useContext(StyleContext);
 

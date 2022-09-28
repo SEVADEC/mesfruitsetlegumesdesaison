@@ -47,7 +47,7 @@ const Text = styled.p`
   text-align: center;
 `;
 export default function Result(props) {
-  const { setCO2E, setLocal } = useContext(ModalContext);
+  const { setCO2E } = useContext(ModalContext);
 
   return (
     <Tile>
