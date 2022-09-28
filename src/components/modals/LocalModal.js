@@ -1,16 +1,16 @@
-import React, { useContext } from 'react'
-import styled from 'styled-components'
+import React, { useContext } from "react";
+import styled from "styled-components";
 
-import ModalContext from 'utils/ModalContext'
+import ModalContext from "utils/ModalContext";
 
-import Modal from 'components/base/Modal'
-import Button from 'components/base/Button'
+import Modal from "components/base/Modal";
+import Button from "components/base/Button";
 
-const Title = styled.h2``
-const Text = styled.p``
+const Title = styled.h2``;
+const Text = styled.p``;
 
 export default function TransportationModal() {
-  const { local, setLocal } = useContext(ModalContext)
+  const { local, setLocal } = useContext(ModalContext);
 
   return (
     <Modal open={local} setOpen={setLocal}>
@@ -23,15 +23,13 @@ export default function TransportationModal() {
         que ces produits ont du faire un long voyage pour arriver jusque notre
         assiette. L’avion est le mode de transport le plus consommateur
         d’énergie et émetteur de gaz à effet de serre, suivi par le transport
-        terrestre et le bateau.        
+        terrestre et le bateau.
       </Text>
       <Text>
-        Vous pouvez acceder aux cartes des producteurs de fruits et légumes 
-        du territoire du SEVADEC
+        Vous pouvez acceder aux cartes des producteurs de fruits et légumes du
+        territoire du SEVADEC
       </Text>
-      <Button to={`${local}`}>
-        La carte ICI 
-      </Button>
+      <Button to={`${local}`}>La carte ICI</Button>
     </Modal>
-  )
+  );
 }
