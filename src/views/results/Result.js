@@ -64,13 +64,13 @@ export default function Result(props) {
         <Flex>
           <Local
             link={props.product.local[1]}
-            onClick={() => setLocal(props.product.local[1])}
+            onClick={() => window.open(props.product.local[1], "_blank")}
             local={props.product.local[0] ? 1 : 0}
           >
             {props.product.local[0]
-              ? `Ce produit est local`
+              ? `Carte des producteurs`
               : `Ce produit n'est pas local`}{" "}
-            <Sup>(?)</Sup>
+            <Sup>(cliquez)</Sup>
           </Local>
           <Score onClick={() => setCO2E(true)}>
             <ScoreNumber high={props.product.CO2 > 1 ? 1 : 0}>
