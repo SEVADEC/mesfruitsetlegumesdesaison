@@ -9,7 +9,7 @@ const search = script.dataset.search;
 const source = window.location.href.toString();
 
 const src = `${
-  domain || "https://fruit-legume-saison-calaisis.netlify.app"
+  domain || "https://fruits-et-legumes-de-saison-calaisis.netlify.app"
 }/embed${search}${search.includes("?") ? "&" : "?"}source=${source}`;
 
 const iframe = document.createElement("iframe");
