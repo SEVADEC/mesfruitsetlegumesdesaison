@@ -149,7 +149,7 @@ export default function Header(props) {
           <ScrollToInformations
             href={
               props.iframe
-                ? "https://fruit-legume-saison-sevadec.netlify.app#informations"
+                ? "https://fruit-legume-saison-calaisis.netlify.app#informations"
                 : "#informations"
             }
             target={props.iframe ? "_blank" : "_self"}
