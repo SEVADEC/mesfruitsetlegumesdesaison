@@ -27,7 +27,7 @@ export default function TransportationModal() {
       </Text>
       <Text>
         Vous pouvez acceder aux cartes des producteurs de fruits et légumes du
-        territoire du SEVADEC
+        territoire du Pays du Calaisis
       </Text>
       <Button to={`${local}`}>La carte ICI</Button>
     </Modal>

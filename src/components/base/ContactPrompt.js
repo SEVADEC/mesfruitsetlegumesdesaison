@@ -31,7 +31,7 @@ export default function ContactPrompt(props) {
               Vous souhaitez afficher cette page web sur votre site ?
             </strong>
             <br />
-            Personnalisez le et intégrez le facilement grace à{" "}
+            Personnalisez-le et intégrez-le facilement grâce à{" "}
             <StyledLink
               onClick={() => {
                 setEmbedOpen(true);
@@ -45,17 +45,10 @@ export default function ContactPrompt(props) {
       )}
       <Text>
         <strong>
-          Cette page web a été modifié pour s'adapter au territoire du SEVADEC,
-          mais si vous souhaitez réutiliser les données brutes ou obtenir de
-          l'aide pour intégrer cette page web ?
+          Cette page web a été modifié pour s'adapter au territoire du Pays du
+          Calaisis.
         </strong>
         <br />
-        <br />
-        Contactez nous au{" "}
-        <MagicLink to="mailto:thyllaire-granon@sevadec.com">
-          SEVADEC
-        </MagicLink>{" "}
-        pour bénéficier de notre accompagnement.
       </Text>
       {!props.contact && (
         <Text>

@@ -9,20 +9,20 @@ export default function ShareWrapper(props) {
       messages={{
         mail: {
           simulator: {
-            subject: `Découvrez et intégrez la page web du SEVADEC "Fruits et légumes de saison du Calaisis"  🍄 `,
+            subject: `Découvrez et intégrez la page web du SEVADEC "Fruits et légumes de saison du Pays du Calaisis"  🍄 `,
             body: `Bonjour,
 
 Vous souhaitez sensibiliser votre communauté ou collaborateurs et les accompagner dans une consommation plus responsable et locale ?
 
-Retrouvez tous les produits du mois grâce à cette page web "Fruits et légumes de saison du Calaisis" !
+Retrouvez tous les produits du mois grâce à cette page web "Fruits et légumes de saison du Pays du Calaisis" !
 
 Découvrez le ici : `,
           },
           result: {
-            subject: `Découvre mon résultat sur la page web du SEVADEC "Fruits et légumes de saison du Calaisis"  🍄 `,
+            subject: `Découvre mon résultat sur la page web du SEVADEC "Fruits et légumes de saison du Pays du Calaisis"  🍄 `,
             body: `Bonjour,
 
-Voici un résultat de recherche sur le site "Fruits et légumes de saison du Calaisis" que je voulais partager avec toi : `,
+Voici un résultat de recherche sur le site "Fruits et légumes de saison du Pays du Calaisis" que je voulais partager avec toi : `,
           },
         },
         facebook: {

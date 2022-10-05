@@ -12,7 +12,7 @@ export default function FooterWrapper() {
         <MagicLink to="https://www.sevadec.fr/calendrier-fruits-legumes">
           calendrier des fruits et légumes de saison
         </MagicLink>{" "}
-        des producteurs sur le territoire du SEVADEC{" "}
+        des producteurs sur le territoire du Pays du Calaisis{" "}
         {/*<MagicLink to="https://www.ademe.fr/calendrier-fruits-legumes-saison">
           calendrier des fruits et légumes de saison de l'ADEME 
         </MagicLink>{" "} */}
