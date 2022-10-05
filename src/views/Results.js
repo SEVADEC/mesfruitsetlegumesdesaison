@@ -1,21 +1,21 @@
-import React, { useState, useEffect, useContext } from 'react'
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
-import Fuse from '../../node_modules/fuse.js/dist/fuse.basic.esm.min.js'
+import React, { useState, useEffect, useContext } from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import Fuse from "../../node_modules/fuse.js/dist/fuse.basic.esm.min.js";
 
-import { currentMonth } from 'utils/months'
-import SearchContext from 'utils/SearchContext'
-import ProductContext from 'utils/ProductContext'
-import useMounted from 'hooks/useMounted'
-import Button from 'components/base/Button'
+import { currentMonth } from "utils/months";
+import SearchContext from "utils/SearchContext";
+import ProductContext from "utils/ProductContext";
+import useMounted from "hooks/useMounted";
+import Button from "components/base/Button";
 
-import Suggestions from 'components/misc/Suggestions'
-import Result from './results/Result'
-import NotFound from './results/NotFound'
+import Suggestions from "components/misc/Suggestions";
+import Result from "./results/Result";
+import NotFound from "./results/NotFound";
 
 const Wrapper = styled.div`
   min-height: 22em;
-`
+`;
 const StyledLink = styled(Link)`
   position: relative;
   display: block;
@@ -27,37 +27,37 @@ const StyledLink = styled(Link)`
   ${(props) => props.theme.mq.small} {
     font-size: 1rem;
   }
-`
+`;
 const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   font-size: 1.2rem;
   font-weight: bold;
-`
+`;
 
 export default function Results(props) {
-  const { search } = useContext(SearchContext)
-  const { products } = useContext(ProductContext)
-  const [filteredProducts, setFilteredProducts] = useState([])
+  const { search } = useContext(SearchContext);
+  const { products } = useContext(ProductContext);
+  const [filteredProducts, setFilteredProducts] = useState([]);
 
-  const mounted = useMounted()
+  const mounted = useMounted();
 
-  const [fuse, setFuse] = useState(null)
+  const [fuse, setFuse] = useState(null);
   useEffect(() => {
     setFuse(
       new Fuse(products, {
-        keys: ['label.fr'],
+        keys: ["label.fr"],
         threshold: 0.3,
         minMatchCharLength: 3,
       })
-    )
-  }, [products])
+    );
+  }, [products]);
 
   useEffect(() => {
     if (fuse) {
-      setFilteredProducts(fuse.search(search))
+      setFilteredProducts(fuse.search(search));
     }
-  }, [search, products, fuse])
+  }, [search, products, fuse]);
 
   return (
     <Wrapper>
@@ -83,12 +83,20 @@ export default function Results(props) {
           Voir tous les produits du mois
         </StyledLink>
       )}
-      <br></br>         
-        <ButtonWrapper>
-          <Button to={`https://librairie.ademe.fr/consommer-autrement/1767-calendrier-des-fruits-et-legumes-de-saison.html`}>
-          Calendrier des fruits et légumes de saison
-          </Button>
-        </ButtonWrapper>      
+      <br></br>
+      <ButtonWrapper>
+        <Button
+          to={`https://www.sevadec.fr/wp-content/uploads/2022/10/calendrier-fruits-et-legumes-2022.pdf`}
+        >
+          Je télécharge le calendrier des fruits et légumes de saison
+        </Button>
+      </ButtonWrapper>
+      <br></br>
+      <ButtonWrapper>
+        <Button to={`https://lecalaisisonyprendgout.com`}>
+          Encore plus d'infos avec "Le Calaisis on y prend goût ! "
+        </Button>
+      </ButtonWrapper>
     </Wrapper>
-  )
+  );
 }
