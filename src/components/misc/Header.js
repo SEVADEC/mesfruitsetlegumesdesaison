@@ -78,7 +78,7 @@ const ScrollToInformations = styled.a`
   margin-right: 1.5rem;
   font-size: 1.2rem;
   font-style: italic;
-  text-align: right;
+  text-align: center;
 
   cursor: pointer;
   ${(props) => props.theme.mq.small} {
@@ -86,14 +86,15 @@ const ScrollToInformations = styled.a`
   }
 `;
 const Institution = styled.img`
-  display: block;
+  text-align: center;
+  margin: auto;
+  display: flex;
   height: 1.2em;
   margin-top: -4rem;
   margin-bottom: 1rem;
-  margin-left: 20rem;
 `;
 const Logos = styled(MagicLink)`
-  display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -110,16 +111,10 @@ export default function Header(props) {
           <Title>
             {props.iframe ? (
               <NoLink>
-                <Top text={"Fruits et légumes de saison du Calaisis"}>
-                  <span>Fruits et légumes de saison du Calaisis</span>
+                <Top text={"Fruits et légumes de saison du Pays du Calaisis"}>
+                  <span>Fruits et légumes de saison du Pays du Calaisis</span>
                 </Top>
-                <Logos
-                  to="https://www.sevadec.fr/"
-                  aria-label="sevadec.fr"
-                  noIcon
-                >
-                  <Institution src={sevadec} alt="sevadec" />
-                </Logos>
+                <br />
                 <Bottom text={""}>
                   <span></span>
                 </Bottom>
@@ -127,25 +122,22 @@ export default function Header(props) {
             ) : (
               <StyledLink
                 to={"/"}
-                aria-label="Fruits et légumes de saison du Calaisis"
-                title={`Fruits et légumes de saison du Calaisis ? Retour à l'accueil`}
+                aria-label="Fruits et légumes de saison du Pays du Calaisis"
+                title={`Fruits et légumes de saison du Pays du Calaisis ? Retour à l'accueil`}
               >
-                <Top text={"Fruits et légumes de saison du Calaisis"}>
-                  <span>Fruits et légumes de saison du Calaisis</span>
+                <Top text={"Fruits et légumes de saison du Pays du Calaisis"}>
+                  <span>Fruits et légumes de saison du Pays du Calaisis</span>
                 </Top>
-                <Logos
-                  to="https://www.sevadec.fr/"
-                  aria-label="sevadec.fr"
-                  noIcon
-                >
-                  <Institution src={sevadec} alt="sevadec" />
-                </Logos>
+                <br />
                 <Bottom text={""}>
                   <span> </span>
                 </Bottom>
               </StyledLink>
             )}
           </Title>
+          <Logos to="https://www.sevadec.fr/" aria-label="sevadec.fr" noIcon>
+            <Institution src={sevadec} alt="sevadec" />
+          </Logos>
           <ScrollToInformations
             href={
               props.iframe

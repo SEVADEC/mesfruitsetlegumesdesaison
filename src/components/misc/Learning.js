@@ -122,11 +122,6 @@ export default function Learning() {
           les fruits et légumes de saison sont également meilleurs au goût.
         </Text>
         <BarChart />
-        <ButtonWrapper>
-          <Button to={"https://www.sevadec.fr/calendrier-fruits-legumes"}>
-            Je télécharge le calendrier des fruits et légumes de saison
-          </Button>
-        </ButtonWrapper>
         <Text>
           25% des émissions de gaz à effet de serre d'un Français sont liées à
           l'alimentation, devant les transports et le logement. Or, c’est un
