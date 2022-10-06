@@ -80,6 +80,7 @@ export default function Results(props) {
       )}
       {!props.iframe && (
         <StyledLink to={`/months/${currentMonth}`} mounted={mounted ? 1 : 0}>
+          <br></br>
           Voir tous les produits du mois
         </StyledLink>
       )}

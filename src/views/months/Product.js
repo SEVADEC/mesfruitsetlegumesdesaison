@@ -118,7 +118,7 @@ export default function Product(props) {
         </Title>
         <Date>
           {props.product.months.length === 12 ? (
-            `Toute l'année :)`
+            `Toute l'année`
           ) : (
             <>
               {[3, 7, 9].includes(interval[0]) ? `D'` : "De "}
