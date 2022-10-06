@@ -76,7 +76,9 @@ const Strong = styled.p`
     text-align: left;
   }
 `;
-const Text = styled.p``;
+const Text = styled.p`
+  text-align: justify;
+`;
 const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
