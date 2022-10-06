@@ -4,7 +4,9 @@ import styled from "styled-components";
 import UXContext from "utils/UXContext";
 import MagicLink from "components/base/MagicLink";
 
-const Text = styled.p``;
+const Text = styled.p`
+  text-align: justify;
+`;
 const Title = styled.h3``;
 const StyledLink = styled.button`
   display: inline;
@@ -45,7 +47,7 @@ export default function ContactPrompt(props) {
       )}
       <Text>
         <strong>
-          Cette page web a été modifié pour s'adapter au territoire du Pays du
+          Cette page web a été modifiée pour s'adapter au territoire du Pays du
           Calaisis.
         </strong>
         <br />

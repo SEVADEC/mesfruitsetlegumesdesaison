@@ -12,6 +12,10 @@ import Button from "components/base/Button";
 import Logo from "components/base/Logo";
 import MobileButtons from "./footer/MobileButtons";
 
+const Text = styled.p`
+  text-align: justify;
+`;
+
 const Wrapper = styled.div`
   position: relative;
   background-color: ${(props) =>
@@ -70,7 +74,7 @@ export default function Footer(props) {
         </Section>
         <Section>
           <h2>Qu'est ce que Datagir ?</h2>
-          <p>
+          <Text>
             <MagicLink to="https://datagir.ademe.fr/">
               <strong>Datagir</strong>
             </MagicLink>{" "}
@@ -78,8 +82,8 @@ export default function Footer(props) {
             <MagicLink to="https://www.ademe.fr/">ADEME</MagicLink> et
             l’incubateur de la DINUM{" "}
             <MagicLink to="https://beta.gouv.fr/">beta.gouv.fr</MagicLink>.
-          </p>
-          <p>
+          </Text>
+          <Text>
             Leur mission est de{" "}
             <strong>
               diffuser les informations et données environnementales en
@@ -92,7 +96,7 @@ export default function Footer(props) {
             </strong>{" "}
             par l'appropriation et l’intégration de ces données afin d’apporter
             l’information au plus près des citoyens.
-          </p>
+          </Text>
           <StyledButton to="https://datagir.ademe.fr/#applications">
             Voir tous les simulateurs de l'ADEME
           </StyledButton>

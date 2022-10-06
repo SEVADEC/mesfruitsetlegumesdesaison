@@ -2,12 +2,17 @@ import React from "react";
 
 import MagicLink from "components/base/MagicLink";
 import Footer from "components/layout/Footer";
+import styled from "styled-components";
+
+const Text = styled.p`
+  text-align: justify;
+`;
 
 export default function FooterWrapper() {
   return (
     <Footer>
       <h2>D'ou viennent ces données ?</h2>
-      <p>
+      <Text>
         Cette page web réutilise les données du{" "}
         <MagicLink to="https://www.sevadec.fr/calendrier-fruits-legumes">
           calendrier des fruits et légumes de saison
@@ -21,7 +26,7 @@ export default function FooterWrapper() {
         Agribalyse est la base de données de référence des indicateurs d'impacts
         environnementaux des produits agricoles produits en France et des
         produits alimentaires consommés en France.
-      </p>
+      </Text>
     </Footer>
   );
 }

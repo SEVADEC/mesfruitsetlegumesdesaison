@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import twemoji from 'twemoji'
+import React from "react";
+import styled from "styled-components";
+import twemoji from "twemoji";
 
 const Wrapper = styled.span`
   display: inline-block;
@@ -10,24 +10,24 @@ const Wrapper = styled.span`
   img {
     display: block;
     width: auto;
-    height: 1em;
+    height: 2.1em;
   }
-`
+`;
 export default function Emoji(props) {
   return props.children ? (
     <Wrapper
       dangerouslySetInnerHTML={{
         __html: String(
           twemoji.parse(props.children, {
-            folder: 'svg',
-            ext: '.svg',
+            folder: "svg",
+            ext: ".svg",
           })
-        ).replace(props.children, props.alt || ''),
+        ).replace(props.children, props.alt || ""),
       }}
       className={props.className}
-      onClick={props.onClick || (() => '')}
+      onClick={props.onClick || (() => "")}
     />
   ) : (
-    ''
-  )
+    ""
+  );
 }
