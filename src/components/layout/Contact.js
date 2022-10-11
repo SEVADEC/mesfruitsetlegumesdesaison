@@ -160,7 +160,7 @@ export default function Contact(props) {
         {empty && <Alert role="alert">Merci de remplir tous les champs</Alert>}
         {mutation.isError && (
           <Alert role="alert">
-            Quelque chose n'a pas fonctionné :(
+            Quelque chose n'a pas fonctionné
             <br />({mutation.error.message})
           </Alert>
         )}
