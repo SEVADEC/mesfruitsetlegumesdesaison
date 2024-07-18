@@ -472,17 +472,6 @@
     "CO2": 0.91
   },
   {
-    "label": { "fr": "Piment" },
-    "emoji": "🌶️",
-    "months": [7, 8, 9],
-    "local": [
-      true,
-      "https://www.google.com/maps/d/viewer?mid=1Apsom5DPmG2izLz5HV4-xdW_ZXOoTGI&usp=sharing"
-    ],
-    "pef": 0.34,
-    "CO2": 3.81
-  },
-  {
     "label": { "fr": "Rutabaga" },
     "emoji": "🌱",
     "months": [0, 9, 10, 11],
